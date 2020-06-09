@@ -10,3 +10,15 @@
 <출력>
 150
 """
+a = int(input('첫 번째 수를 입력하세요 :'))
+b = int(input('두 번째 수를 입력하세요 :'))
+op = input('어떤 연산을 하실 건가요?')
+
+if op == '+':
+    print(a+b)
+elif op == '-':
+    print(a-b)
+elif op == '*':
+    print(a*b)
+elif op == '/':
+    print(a/b)

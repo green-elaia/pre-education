@@ -27,3 +27,12 @@
 
 
 """
+n = int(input('숫자를 입력하세요 :'))
+for i in range(1, n*2):
+    if i <= n:
+        s = '★'*i
+        s = s.rjust(n)
+    else:
+        s = '★' * (n*2-i)
+        s = s.rjust(n)
+    print(s)

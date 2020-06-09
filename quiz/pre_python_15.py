@@ -8,3 +8,12 @@
 <출력>
 남자
 """
+social_nums = input('주민등록번호 입력: ')
+
+x = social_nums.split('-')[1][0]
+if x == '1' or x == '3':
+    print('남자')
+elif x == '2' or x == '4':
+    print('여자')
+else:
+    print('다시 입력하세요.')

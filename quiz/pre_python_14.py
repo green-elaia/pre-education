@@ -19,3 +19,17 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+
+s = input('input string: ')
+
+ret = []
+for c in s:
+    if c >= 'A' and c <= 'Z':
+        ret.append(c.lower())
+    elif c >= 'a' and c <= 'z':
+        ret.append(c.upper())
+    else:
+        print('입력 형식이 잘못되었습니다.')
+        break
+
+print(''.join(ret))
