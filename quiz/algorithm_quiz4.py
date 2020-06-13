@@ -17,3 +17,11 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+def greedy(total):
+    x, remainder = divmod(total, 100)
+    y, remainder = divmod(remainder, 50)
+    z, remainder = divmod(remainder, 10)
+    print('100원 {}개, 50원 {}개, 10원 {}개'.format(x, y, z))
+
+greedy(1050)
